@@ -68,11 +68,6 @@
                         <h1
                         class="text-center display-2 teal--text text--accent-3">
                         Create Account</h1>
-                        <div class="text-center mt-4">
-                          <v-btn class="mx-2" fab color="black" outlined>
-                            <v-icon>mdi-google</v-icon>
-                          </v-btn>
-                        </div>
                         <v-form>
                           <v-text-field
                             v-model="email"
@@ -180,7 +175,7 @@ export default {
   watch: {
     user(value) {
       if (value !== null && value !== undefined) {
-        this.$router.push('/');
+        this.$router.push('/todo');
       }
     },
   },

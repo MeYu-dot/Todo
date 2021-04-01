@@ -56,7 +56,7 @@ export default {
   methods: {
     logoutFromFirebase() {
       this.$store.dispatch('signOutAction');
-      this.$router.push('/login');
+      this.$router.push('/');
     },
   },
 };

@@ -7,24 +7,17 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/login',
+    path: '/',
     name: 'Login',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-oaded when the route is visited.
     component: Login,
-    meta: {
-      requiredAuthentication: false,
-      redirectWhenLoggedIn: true,
-    },
   },
   {
-    path: '/',
+    path: '/todo',
     name: 'Todo',
     component: Todo,
-    meta: {
-      requiredAuthentication: true,
-    },
   },
 ];
 
